@@ -1,4 +1,4 @@
-# D-FLIPFLOP-NEGEDGE
+# D-FLIPDLOP-NEGEDGE
 
 **AIM:**
 
@@ -28,36 +28,39 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **Procedure**
 
-/* write all the steps invloved */
-1.Open quartus II and create New project wizard. 2. Write the program in Verilog HDL file and run
-the program. 3. Download the RTL viewer 4. Now open university program VWF and download
-waveform after the execution.
+1.Type the program in Quartus software.
 
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram
 **PROGRAM**
-
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:Ragasudha R 
-RegisterNumber:24900684*/
 ```
-exp_8(D,clk,Q,Qbar); 
-input D,clk; 
-output reg Q; 
-output reg Qbar; 
-initial Q=0; 
-initial Qbar=1; 
-always@(posedge clk) begin Q=D; 
-Qbar=~D; 
-end endmodule
+Program for flipflops and verify its truth table in quartus using Verilog programming. 
+Developed by:Kavidharshini Ramesh
+RegisterNumber:25012397
 ```
-
+```
+module ex8(D,Y);
+input D;
+output Y;
+assign Y = D;
+endmodule 
+```
 
 **RTL LOGIC FOR FLIPFLOPS**
 
-![WhatsApp Image 2024-12-01 at 19 44 07_d461b372](https://github.com/user-attachments/assets/cd6aa5ed-dae4-460f-b4e6-f069518fec36)
+![image](https://github.com/user-attachments/assets/d190b0e1-10e8-46dc-af72-7ff1f1932a6b)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
-![WhatsApp Image 2024-12-01 at 19 50 42_4705b4bd](https://github.com/user-attachments/assets/a58db40f-3b69-44dc-92ec-94e369a5116d)
+![image](https://github.com/user-attachments/assets/46f22b23-d0d6-4b12-b6bb-bd364dde7a50)
+
 
 **RESULTS**
-Thus the D flip flop is executed in Quartus and output is verified.
+
+Thus the D Flipflop circuits are designed and the truth tables is verified using Quartus software.
